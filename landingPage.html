@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh N Finish - Home Cleaning Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .cta-button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        #services, #testimonials, #contact, #login, #booking {
+            padding: 20px;
+            text-align: center;
+            background-color: white;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .service-item {
+            display: inline-block;
+            background-color: #2ecc71;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2c3e50;
+            color: white;
+        }
+        form label, form input, form button {
+            display: block;
+            margin: 10px auto;
+        }
+        form input {
+            padding: 8px;
+            width: 80%;
+            max-width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".service-item").forEach(item => {
+                item.addEventListener("click", function() {
+                    window.location.href = "#booking";
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Fresh N Finish</h1>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h2>Your Trusted Home Cleaning Service</h2>
+        <p>Professional and reliable cleaning for your home and office.</p>
+        <a href="#contact" class="cta-button">Book Now</a>
+    </section>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-item">Deep Cleaning</div>
+        <div class="service-item">Regular Cleaning</div>
+        <div class="service-item">Move-in/Move-out Cleaning</div>
+        <div class="service-item">Cook</div>
+        <div class="service-item">Housekeeping</div>
+        <div class="service-item">Nursing</div>
+    </section>
+    
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <p>"Fresh N Finish made my home spotless! Highly recommended." - Sarah M.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@freshnfinish.com</p>
+        <p>Phone: (91) 8850183952</p>
+    </section>
+    
+
+    
+    <section id="booking">
+        <h2>Book a Service</h2>
+        <form>
+            <label for="service">Select Service:</label>
+            <select id="service" name="service">
+                <option>Deep Cleaning</option>
+                <option>Regular Cleaning</option>
+                <option>Move-in/Move-out Cleaning</option>
+                <option>Cook</option>
+                <option>Housekeeping</option>
+                <option>Nursing</option>
+            </select>
+            
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Fresh N Finish. All rights reserved.</p>
+    </footer>
+</body>
+</html>
