@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh N Finish - Home Cleaning Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Your existing styles here... */
+    </style>
+    <script>
+        // Ensure the redirection happens correctly
+        document.addEventListener("DOMContentLoaded", function() {
+            // Remove the script preventing the default behavior for Book Now link
+        });
+
+        function redirectToHome(event) {
+            event.preventDefault();  // Ensure form doesn't refresh the page
+            window.location.href = "maids.html";  // Correct redirection
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Fresh N Finish</h1>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h2>Your Trusted Home Cleaning Service</h2>
+        <p>Professional and reliable cleaning for your home and office.</p>
+        <!-- Book Now Button with Correct Redirection -->
+        <a href="maids.html" class="cta-button">Book Now</a>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@freshnfinish.com</p>
+        <p>Phone: (91) 8850183952</p>
+    </section>
+
+    <section id="login">
+        <h2>Login</h2>
+        <form onsubmit="redirectToHome(event)">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Fresh N Finish. All rights reserved.</p>
+    </footer>
+</body>
+</html>
